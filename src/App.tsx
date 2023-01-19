@@ -1,34 +1,43 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import styled from "styled-components"
 
-function App() {
-  const [count, setCount] = useState(0)
+
+const HeaderContainer = styled.header`
+  max-width: 90rem;
+  margin: auto;
+  border: 1px solid black;
+  
+  h1{
+    margin: 5rem 0 1.5rem;
+  }
+
+  h2{
+    margin-bottom: 2.625rem;
+  }
+`;
+
+const ContainerText = styled.div`
+  border:1px solid black;
+  margin: auto;
+  max-width: 46rem;
+  text-align: left;
+
+  div{
+    max-width: 19.9375rem;
+    border: 1px solid black;
+  }
+`;
+
+export function App() {
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    <HeaderContainer>
+      <ContainerText>
+        <div>
+          <h1>Crie e compartilhe seu evento.</h1>
+          <h2>O primeiro passo, é preencher esse formulário de inscrição.</h2>
+        </div>
+      </ContainerText>
+    </HeaderContainer>
   )
 }
 
-export default App
