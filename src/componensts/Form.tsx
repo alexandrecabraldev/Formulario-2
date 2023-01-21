@@ -55,18 +55,30 @@ const ContainerInputLabel = styled.div`
         line-height: 1.5rem;
     }
 
-    input[type="text"]{
+    input[type="text"], select{
         height: 3.5rem;
         background-color: ${props=>props.theme.backgroundForm};
         border: 1px solid ${props=>props.theme.border};
         border-radius: 8px;
         padding: 10px;
         font-size: 1rem;
+        
            
         &:focus{
             outline:1px solid ${props=>props.theme.focus};
         }
     }
+
+    select{
+        color: ${props=>props.theme.textPlaceholder};
+
+        option{
+            color: black;
+        }
+    }
+    
+   
+    
 
     textarea{
         border-radius: 8px;
@@ -95,18 +107,35 @@ export function Form(){
             </ContainerInputLabel>
 
             <ContainerInputLabel>
-                <label>Link do evento</label>
+                <ContainerLabelTitle>
+                    <label>Link do evento</label>
+                    <span>(comece com https://)</span>
+                </ContainerLabelTitle>
                 <input type="text" title="inputText"/>
             </ContainerInputLabel>
 
             <ContainerInputLabel>
-                <label>Whatsapp para contato</label>
+                <ContainerLabelTitle>
+                    <label>Whatsapp para contato</label>
+                    <span>(somente números)</span>
+                </ContainerLabelTitle>
                 <input type="text" title="inputText"/>
             </ContainerInputLabel>
 
             <ContainerInputLabel>
                 <label>Informações  extras</label>
                 <textarea name="textarea" id="" cols={30} rows={10} title="textArea"></textarea>
+            </ContainerInputLabel>
+
+            <ContainerInputLabel>
+                <label>Categoria</label>
+                <select name="" id="" title="select">
+                    <option value="placeholder" selected hidden disabled>Tipo do Evento</option>
+                    <option value="value One">Value One</option>
+                    <option value="value two">Value two</option>
+                    <option value="value three">Value three</option>
+                    <option value="value four">Value four</option>
+                </select>
             </ContainerInputLabel>
         </Fieldset>
     );
