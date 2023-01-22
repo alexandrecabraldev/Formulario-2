@@ -1,4 +1,4 @@
-import { DefaultTheme } from "../DefaultTheme";
+import { DefaultTheme } from "../componensts/Default/DefaultTheme";
 
 type CustomTheme = typeof DefaultTheme;
 

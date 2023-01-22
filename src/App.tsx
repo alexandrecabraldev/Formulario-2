@@ -5,7 +5,11 @@ export function App() {
 
   return (
     <>
-      <Header/>
+      <Header 
+        titleHeader="Crie e compartilhe seu evento." 
+        subtitleHeader="O primeiro passo, é preencher esse formulário de inscrição."
+      />
+      
       <Form/>
     </>
   )

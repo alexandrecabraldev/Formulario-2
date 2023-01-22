@@ -48,13 +48,18 @@ const ContainerText = styled.div`
   }
 `;
 
-export function Header(){
+interface TitleSubtitleHeader{
+  titleHeader:string;
+  subtitleHeader:string;
+}
+
+export function Header(props: TitleSubtitleHeader){
     return(
         <HeaderContainer>
             <ContainerText>
                 <div>
-                    <h1>Crie e compartilhe seu evento.</h1>
-                    <h2>O primeiro passo, é preencher esse formulário de inscrição.</h2>
+                    <h1>{props.titleHeader}</h1>
+                    <h2>{props.subtitleHeader}</h2>
                 </div>
             </ContainerText>
         </HeaderContainer>
