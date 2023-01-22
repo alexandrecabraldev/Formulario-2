@@ -20,8 +20,6 @@ export const FieldsetDefault = styled.fieldset`
 
 export const Fieldset = styled(FieldsetDefault)`
     padding: 4rem 4rem 1.5rem;
-    /* border: none;
-    min-width: 19rem; */
     
 `;
 

@@ -1,10 +1,14 @@
 import { InputSection } from "./InputSection";
 import { TitleSection, FieldsetDefault } from "./TitleSection";
 
-export function Privacy(){
+interface TypeTitleProps{
+    titleSectionProps:string;
+}
+
+export function Privacy(props:TypeTitleProps){
     return(
         <FieldsetDefault>
-            <TitleSection>qualqeur coisa</TitleSection>
+            <TitleSection>{props.titleSectionProps}</TitleSection>
 
             <InputSection 
                 titleLabel="E-mail do administrador"

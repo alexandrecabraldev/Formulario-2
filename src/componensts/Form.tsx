@@ -17,7 +17,7 @@ export function Form(){
     return(
         <Formy>
             <EventInformation titleSectionProps="Informações do Evento" />
-            <Privacy/>
+            <Privacy titleSectionProps="Privacidade"/>
         </Formy>
     );
 }
