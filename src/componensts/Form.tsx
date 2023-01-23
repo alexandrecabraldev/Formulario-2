@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Button } from "./Button";
+import { DayHour } from "./DayHour";
 import { EventInformation } from "./EventInformation";
 import { Privacy } from "./Privacy";
 
@@ -18,6 +20,8 @@ export function Form(){
         <Formy>
             <EventInformation titleSectionProps="Informações do Evento" />
             <Privacy titleSectionProps="Privacidade"/>
+            <DayHour titleSectionProps="Dia e hora"/>
+            <Button titleSectionProps="Salvar evento"/>
         </Formy>
     );
 }

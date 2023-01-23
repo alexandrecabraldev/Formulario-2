@@ -15,11 +15,15 @@ export const TitleSection = styled.h1`
 export const FieldsetDefault = styled.fieldset`
     border: none;
     min-width: 19rem;
-    padding: 0 4rem 4rem;
+    padding: 0 4rem 1.5rem;
 `;
 
 export const Fieldset = styled(FieldsetDefault)`
     padding: 4rem 4rem 1.5rem;
     
+`;
+
+export const FieldsetEnd = styled(FieldsetDefault)`
+    padding: 0rem 4rem 2.5rem;
 `;
 

@@ -1,3 +1,4 @@
+import { CheckedArea } from "./CheckedArea";
 import { InputSection } from "./InputSection";
 import { TitleSection, FieldsetDefault } from "./TitleSection";
 
@@ -19,6 +20,8 @@ export function Privacy(props:TypeTitleProps){
                 titleLabel="Senha de acesso para os participantes" 
                 titleSpan="(mínimo 8 caracteres)"
             />
+
+            <CheckedArea titleLabel="Evento privado"/>
         </FieldsetDefault>
     );
 }
