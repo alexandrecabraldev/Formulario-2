@@ -16,8 +16,23 @@ const Formy = styled.form`
 
 
 export function Form(){
+
+    const input = document.querySelector("input[name='Link do evento']");
+    
+    console.log(input);
+
+    function handleSubmit(event: React.FormEvent<HTMLFormElement>){
+        event.preventDefault();
+        console.log("submit");
+        console.log(input);
+
+        // if(Number(input?.value.length)<8){
+        //     console.log("entrou")
+        // }
+    }
+
     return(
-        <Formy>
+        <Formy onSubmit={handleSubmit}>
             <EventInformation titleSectionProps="Informações do Evento" />
             <Privacy titleSectionProps="Privacidade"/>
             <DayHour titleSectionProps="Dia e hora"/>

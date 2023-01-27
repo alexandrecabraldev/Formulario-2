@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import { ContainerInputs } from "./Default/ContainerInputs";
+import { useForm } from "react-hook-form";
 
 const ContainerTitle = styled.div`
     display: flex;
@@ -19,9 +20,11 @@ const ContainerTitle = styled.div`
 interface InformationProps{
     titleLabel:string;
     titleSpan?:string;
+    name?:string;
 }
 
 export function InputSection(props:InformationProps){
+
     return(
         <ContainerInputs>
             <ContainerTitle>
@@ -29,7 +32,10 @@ export function InputSection(props:InformationProps){
                 <span>{props.titleSpan}</span>
             </ContainerTitle>
                     
-            <input type="text" title="inputText"/>
+            <input type="text" 
+                title="inputText"
+                name={props.name} 
+            />
         </ContainerInputs>
     );
 }

@@ -21,8 +21,8 @@ export function SelectComponent(props: PropsTitle){
         <ContainerSelect>
             <label>{props.titleLabel}</label>
 
-            <select name="" id="" title="select">
-                <option value="placeholder" selected hidden disabled>Tipo do Evento</option>
+            <select name="" id="" title="select" defaultValue={"placeholder"}>
+                <option value="placeholder" hidden>Tipo do Evento</option>
                 <option value="value One">Value One</option>
                 <option value="value two">Value two</option>
                 <option value="value three">Value three</option>

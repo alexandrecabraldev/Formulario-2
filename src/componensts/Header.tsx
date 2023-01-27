@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const HeaderContainer = styled.header`
-  max-width: 90rem;
+  max-width: 100%;
   position: relative;
   margin: auto;
   //background-color: ${props=>props.theme.backgroundHeader}; 
