@@ -33,6 +33,7 @@ export const ContainerInputs = styled.div`
         background-color: ${props=>props.theme.backgroundForm};
         padding: 10px;
         font-size: 1rem;
+        resize: none;
 
         &:focus{
             outline:1px solid ${props=>props.theme.focus};
